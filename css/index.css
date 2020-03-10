@@ -1,0 +1,30 @@
+.fila{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+}
+
+.columna-contenedora{
+   height: 300px;
+}
+
+.contenedor-carusel{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-imagenes-carusel{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-imagen{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+
