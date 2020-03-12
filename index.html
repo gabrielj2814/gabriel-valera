@@ -9,7 +9,35 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script type="text/javascript" src="./js/librerias/jquery.min.js"></script>
     <script type="text/javascript" src="./bootstrap4/js/bootstrap.js"></script>
-    
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+      
+      !function() {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+        }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('3z7pxd6nczxa');
+    </script>
+    <!-- End of Async Drift Code -->
+      
 </head>
 <body>  
   
@@ -18,7 +46,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 class="modal-title" id="exampleModalLongTitle">Bienvenidos</h2>
+              <h2 class="modal-title" id="exampleModalLongTitle">Bienvenido</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -72,36 +100,64 @@
                   <li data-target="#carousel1" data-slide-to="1"></li>
                   <li data-target="#carousel1" data-slide-to="2"></li>
                   <li data-target="#carousel1" data-slide-to="3"></li>
+                  <li data-target="#carousel1" data-slide-to="4"></li>
+                  <li data-target="#carousel1" data-slide-to="5"></li>
                 </ol>
                 <!-- diapositivas -->
                 <div class="carousel-inner contenedor-imagenes-carusel">
                   <div class="contenedor-imagen carousel-item active">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/JavaScriptBk.png" alt="muy pronto">
-                      <div class="carousel-caption">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/post-banner-javascript.png" alt="muy pronto">
+                      <!--
+                        <div class="carousel-caption">
                         <h3>título 1</h3>
                         <p>Descripción de la imagen.</p>
                       </div>
+                      -->
                   </div>
                   <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/5c7b53a7be1dd267f24f7559584d1345.jpg" alt="">
-                      <div class="carousel-caption">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/react-one.jpg" alt="">
+                      <!--
+                        <div class="carousel-caption">
                         <h3>título 2</h3>
                         <p>Descripción de la imagen.</p>
                       </div>
+                      -->
                   </div>
                   <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria//imagenes-carusel/85_ZeroConfigToolkit.jfif" alt="">
-                      <div class="carousel-caption">
-                        <h3>título 3</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria//imagenes-carusel/85_ZeroConfigToolkit.jfif" alt="">
-                      <div class="carousel-caption">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/6017da3ed8f203fe979b16dae1ad2259.png" alt="">
+                     <!-- 
+                        <div class="carousel-caption">
                         <h3>título 4</h3>
                         <p>Descripción de la imagen.</p>
                       </div>
+                     -->
+                  </div>
+                  <div class="contenedor-imagen carousel-item">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/0717_WhythehellwouldIuseNodeJS_Razvan_Social-a216a55a1f0372fa70f397fd38e9297d.png" alt="">
+                     <!-- 
+                        <div class="carousel-caption">
+                        <h3>título 4</h3>
+                        <p>Descripción de la imagen.</p>
+                      </div>
+                     -->
+                  </div>
+                  <div class="contenedor-imagen carousel-item">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/050209d3-04f8-4606-b140-e50b376fbcae-2.png" alt="">
+                      <!--
+                        <div class="carousel-caption">
+                        <h3>título 3</h3>
+                        <p>Descripción de la imagen.</p>
+                      </div>
+                       -->
+                  </div>
+                  <div class="contenedor-imagen carousel-item">
+                    <img class="imagen d-block" src="./galeria/imagenes-carusel/1294277.jpg" alt="">
+                     <!-- 
+                        <div class="carousel-caption">
+                        <h3>título 4</h3>
+                        <p>Descripción de la imagen.</p>
+                      </div>
+                     -->
                   </div>
                 </div>
                 <!-- botones de desplazamiento a izquierda y derecha -->      
@@ -115,10 +171,21 @@
                 </a>
             </div>
         </div>
-        <h2>
-            mi sitio web<br/>
-        vista Inicio
-        </h2>
+        <div class="row fila">
+          <div class="columna-presentacion col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 text-justify">
+            <h2>Hola</h2>
+            <p>
+              Hola mucho gusto, mi nombre es Gabriel Jesus, vivo en Venezuela en el estado Portuguesa,
+              actualmente estoy cursando el tercer año de la universidad,
+              en el cual ya tengo el título de técnico superior en informática o como se le conoce por su siglas TSU en informática.
+              El aria de la informática a la cual me dedico es la de la programación, si me preguntaran ¿qué te gusta más,
+              el desarrollo FrontEnd o BackEnd?, respondería que las dos, porque me gusta las dos arias por lo tanto soy un desarrollador FullStack,
+              mi lenguaje favorito por excelencia es JavaScript aunque también me gusta Python pero me encanta todo los que puedes hacer con el eco sistema de JavaScript,
+              bueno si quieres saber más sobre mis Skills puedes ir dándole click <a href="./html/conocimientos.html">aqui</a> para saber más sobre todos los lenguajes o framework que uso
+              o si quieres contactarme para trabajar en un proyecto en el cual tengas en mente as click <a href="./html/contacto.html">aqui</a> para que puedas contactarme.
+            </p>
+          </div>
+        </div>
           
     </div>
     

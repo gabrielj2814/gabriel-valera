@@ -8,10 +8,38 @@
     <link rel="stylesheet" type="text/css" href="../bootstrap4/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/conocimientos.css">
     <script type="text/javascript" src="../js/librerias/jquery.min.js"></script>
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+      
+      !function() {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+        }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('3z7pxd6nczxa');
+    </script>
+    <!-- End of Async Drift Code -->
 </head>
 <body>
-    <div class="containter-fluid">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="containter-fluid contenedor_conocimineto">
+        <nav class="menu navbar navbar-expand-sm navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,12 +68,12 @@
             </div>
           </nav>
           <div class="fila row justify-content-center mt-3">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <div class="columna col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                 <h1>Mis Conociminetos</h1>
             </div>
           </div>
-        <div class="fila ml-1 row justify-content-center ">
-            <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+        <div class="fila row justify-content-center ">
+            <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
                 <h2>Lenguajes:</h2>
                 <ul>
                     <li>Python</li>
@@ -57,7 +85,7 @@
                     <li>SQL</li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+            <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
               <h2>Framework Frontend:</h2>
               <ul>
                   <li>Vuejs</li>
@@ -66,14 +94,14 @@
               </ul>
             </div>
         </div>
-        <div class="fila ml-1 row justify-content-center ">
-          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+        <div class="fila row justify-content-center ">
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
             <h2>Framework Backend:</h2>
             <ul>
                 <li>Expressjs</li>
             </ul>
           </div>
-          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
               <h2>Gestores de Bases de Datos</h2>
               <ul>
                   <li>MySQL</li>
@@ -81,8 +109,35 @@
               </ul>
           </div>
         </div>
-        <div class="fila row justify-content-center mt-3 ml-1">
-          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+        <div class="fila row justify-content-center ">
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+            <h2>Librerías JavaScript:</h2>
+            <ul>
+                <li>Axios</li>
+                <li>Jquery -> pero ya no lo uso con mucha frecuencia</li>
+            </ul>
+          </div>
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+              <h2>Librerías PHP:</h2>
+              <ul>
+                  <li>FPDF</li>
+              </ul>
+          </div>
+        </div>
+        <div class="fila row justify-content-center mt-3">
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+              <h2>Gestores de contenido (CMS):</h2>
+              <ul>
+                <li>WordPress Plugins:
+                  <ul>
+                    <li>WooCommerce -> Para crear y gerstionas tiendas online</li>
+                    <li>Tawk.to -> Chat </li>
+                    <li>Blog</li>
+                  </ul>
+                </li>
+              </u>
+          </div>
+          <div class="columna col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
               <h2>Roles como programador:</h2>
               <ul>
                 <li>FullStack</li>
@@ -90,7 +145,6 @@
                 <li>FrontEnd</li>
               </ul>
           </div>
-          <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
         </div>
     </div>
     <script type="text/javascript" src="../js/librerias/popper.min.js"></script>
