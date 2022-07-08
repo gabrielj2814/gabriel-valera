@@ -36,6 +36,12 @@ body{
     background-color: var(--color-principal);
     position: fixed;
     z-index: 200;
+    transition: opacity .5s ease-out;
+}
+
+.ocultar-loader{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .x-loader{
@@ -141,7 +147,6 @@ body{
     pointer-events: none;
     transform: scale(.9);
     opacity: 0;
-
 }
 
 .contenedor-menu{

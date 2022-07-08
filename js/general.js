@@ -9,3 +9,11 @@ function mostrarMenu(){
     //     console.log("agregar pointer-events")
     // }
 }
+
+window.onload = () =>{
+    let $conenedorLoaded=document.querySelector(".conenedor-loaded")
+    let segundos = 3
+    setTimeout(() => {
+        $conenedorLoaded.classList.add("ocultar-loader")
+    },segundos * 1000)
+}
