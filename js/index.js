@@ -7,7 +7,3 @@
 //     "redes":false,
 //     "contactame":false,
 // }
-
-function irHaMenu(){
-
-}

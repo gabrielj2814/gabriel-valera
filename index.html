@@ -6,59 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi web site</title>
     <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
 
     <!-- <div class="contenedor"></div> -->
     <!-- ocultar-vista -->
-    <section class="vista vista-inicio " id="inicio">
+    <div class="section-loaded">
+
+    </div>
+    <nav class="vista section-menu ocultar-section-menu" id="menu">
         <div class="contenedor center-margin">
-            <header class="encabezado ">
-                <a href="https://github.com/gabrielj2814">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-            
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </header>
-            <section class="contenedor-contenido-vista">
-                <div class="contenido-inicio">
-                    <div class=" container-fluid">
-                        <div class="row justify-content-between justify-content-sm-center">
-                            <div class="col-12 col-sm-6 mb-5">
-                                <div class="avatar-vista-inicio">
-                                    <img class="imagen-avatar-inicio" src="./images/fotos/avatar-test.jpg" alt="avatar">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 text-center text-sm-start mb-5">
-                                <h1>
-                                    Bienvenido a mi sito web espero que la pases chevere.
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center ">
-                            <div class="col-auto">
-                                <button class="btn btn-primary btn-negro-oscuro btn-lg" data-ir-vista="inicio">Entrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <section class="vista vista-menu ocultar-vista" id="menu">
-        <div class="contenedor center-margin">
-            <header class="encabezado ">
-                <a href="https://github.com/gabrielj2814">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-            
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <header class="encabezado justify-content-end">
+                <svg onclick="mostrarMenu()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
             </header>
             <section class="contenedor-contenido-vista">
                 <div class="contenedor-menu">
@@ -98,8 +63,46 @@
                 </div>
             </section>
         </div>
-    </section>
+    </nav>
+    <main class="vista vista-inicio " id="inicio">
+        <div class="contenedor center-margin">
+            <header class="encabezado justify-content-between">
+                <a href="https://github.com/gabrielj2814">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </header>
+            <section class="contenedor-contenido-vista">
+                <div class="contenido-inicio">
+                    <div class=" container-fluid">
+                        <div class="row justify-content-between justify-content-sm-center">
+                            <div class="col-12 col-sm-6 mb-5">
+                                <div class="avatar-vista-inicio">
+                                    <img class="imagen-avatar-inicio" src="./images/fotos/avatar-test.jpg" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center text-sm-start mb-5">
+                                <h1>
+                                    Bienvenido a mi sito web espero que la pases chevere.
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="col-auto">
+                                <button class="btn btn-primary btn-negro-oscuro btn-lg" data-ir-vista="inicio" onclick="mostrarMenu()">Entrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <script src="./bootstrap5/js/bootstrap.js" type="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/general.js" type="text/javascript"></script>
 </body>
 </html>
