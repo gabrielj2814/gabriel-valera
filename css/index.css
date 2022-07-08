@@ -1,3 +1,16 @@
+:root{
+    /* colores */
+    --color-principal:#1A1A1A;
+    --color-secundario:#2D2D2D;
+    --color-fuente-principal:#FFFFFF;
+    --h1: 3rem;
+    /* --h2: ; */
+    /* --h3: ; */
+    /* --h4: ; */
+    /* --h5: ; */
+    /* --h6: ; */
+}
+
 *{
     box-sizing: border-box;
     /* border: 1px solid aqua; */
@@ -5,13 +18,6 @@
 
 .console-log{
     border: 1px solid aqua;
-}
-
-:root{
-
-    --color-principal:#1A1A1A;
-    --color-secundario:#2D2D2D;
-    --color-fuente-principal:#FFFFFF;
 }
 
 html,body{
@@ -22,22 +28,26 @@ html,body{
 body{
     background-color: var(--color-principal);
     color: var(--color-fuente-principal);
+    font-family: 'roboto-regular';
+}
+
+.ocultar-vista{
+    display: none;
 }
 
 .contenedor{
     max-width: 1024px;
+    height: 100vh;
 }
 
 .vista{
-    /* background-color: red; */
     /* width: 100vw; */
     height: 100vh;
 }
 
 .encabezado{
-    /* background-color: red; */
     width: 100%;
-    height: 10vh;
+    height: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,10 +66,9 @@ body{
     height: 40px;
 }
 
-.contenedor-inicial{
-    /* background-color: red; */
+.contenedor-contenido-vista{
     width: 100%;
-    height: 90vh;
+    height: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,18 +77,6 @@ body{
 }
 
 .contenido-inicio{
-    /* background-color: aqua; */
-    max-width: 700px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.contenedor-contenido{
-    /* background-color: aqua; */
     max-width: 700px;
     width: 100%;
     height: auto;
@@ -98,14 +95,64 @@ body{
     overflow: hidden;
 }
 
+
+.contenedor-menu{
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .avatar-vista-inicio img{
     display: block;
     width: 100%;
     height: 100%;
 }
 
+.titulo{
+    font-size: var(--h1);
+}
 
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+}
 
+.menu a {
+    text-decoration: none;
+    color: var(--color-fuente-principal);
+    padding: 10px 10px 10px 10px ;
+    display: block;
+}
+
+.barra-verical{
+    background-color: #fff;
+    width: 2px;
+    height: 100%;
+}
+
+.contenedor-imagen-menu{
+    width: 100%;
+    height: 250px;
+
+}
+
+.figure-menu{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.imagen-menu{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
 
 /* color btn */
 
@@ -121,3 +168,11 @@ body{
         background-color: red;
     } */
 }
+
+/* fuentes  */
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+

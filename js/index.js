@@ -1,6 +1,13 @@
-// alert("hola")
-// const configLocoScroll={
-//     el: document.querySelector('main'),
-//     smooth: true
+// const vistas={
+//     "inicio":true,
+//     "menu":false,
+//     "conociminetos":false,
+//     "proyecto":false,
+//     "detalles":false,
+//     "redes":false,
+//     "contactame":false,
 // }
-// const scroll = new LocomotiveScroll(configLocoScroll);
+
+function irHaMenu(){
+
+}

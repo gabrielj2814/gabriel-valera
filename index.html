@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi web site</title>
     <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -12,7 +12,8 @@
 
 
     <!-- <div class="contenedor"></div> -->
-    <section class="vista vista-inicio ">
+    <!-- ocultar-vista -->
+    <section class="vista vista-inicio " id="inicio">
         <div class="contenedor center-margin">
             <header class="encabezado ">
                 <a href="https://github.com/gabrielj2814">
@@ -23,7 +24,7 @@
             
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </header>
-            <section class="contenedor-inicial">
+            <section class="contenedor-contenido-vista">
                 <div class="contenido-inicio">
                     <div class=" container-fluid">
                         <div class="row justify-content-between justify-content-sm-center">
@@ -40,7 +41,7 @@
                         </div>
                         <div class="row justify-content-center ">
                             <div class="col-auto">
-                                <button class="btn btn-primary btn-negro-oscuro btn-lg">Entrar</button>
+                                <button class="btn btn-primary btn-negro-oscuro btn-lg" data-ir-vista="inicio">Entrar</button>
                             </div>
                         </div>
                     </div>
@@ -48,7 +49,7 @@
             </section>
         </div>
     </section>
-    <section class="vista vista-menu ">
+    <section class="vista vista-menu ocultar-vista" id="menu">
         <div class="contenedor center-margin">
             <header class="encabezado ">
                 <a href="https://github.com/gabrielj2814">
@@ -59,30 +60,45 @@
             
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </header>
-            <section class="contenedor-inicial">
-                <div class="contenedor-contenido">
-                    
+            <section class="contenedor-contenido-vista">
+                <div class="contenedor-menu">
+                    <div class="container-fluid mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <span class="titulo">Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center justify-content-sm-between">
+                            <div class="col-12 col-sm-5">
+                                <ul class="menu">
+                                    <li><a href="#" class=" text-center text-sm-start">Resume sobre mi</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Conocimientos</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Proyectos</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Detalles sobre mi</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Redes</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Contactame</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Regresar</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto d-none d-sm-flex">
+                                <span class="barra-verical"></span>
+                            </div>
+                            <div class="col-5 d-none d-sm-flex">
+                                <figure class="figure-menu">
+                                    <div class="contenedor-imagen-menu mb-4">
+                                        <img class="imagen-menu" src="./images/menu/1.jpg" alt="imagen xd">
+                                    </div>
+                                    <figcaption>Texto de ejemplo dando una breve explicación de lo que vera en la vista XD</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-
     </section>
-    <!-- <section>
-        <h2> seccion - Sobre mi</h2>
-    </section>
-    <section >
-        <h2> seccion - Proyectos</h2>
-    </section>
-    <section>
-        <h2> seccion - Un poco mas sobre mi</h2>
-    </section>
-    <section>
-        <h2> seccion - Contactame</h2>
-    </section>
-    <footer>
-        <h2>footer</h2>
-    </footer> -->
-
     <script src="./bootstrap5/js/bootstrap.js" type="text/javascript"></script>
     <script src="./js/index.js" type="text/javascript"></script>
 </body>
