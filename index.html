@@ -2,195 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Jesus Valera Castillo</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap4/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="./bootstrap4/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <script type="text/javascript" src="./js/librerias/jquery.min.js"></script>
-    <script type="text/javascript" src="./bootstrap4/js/bootstrap.js"></script>
-    <!-- Start of Async Drift Code -->
-    <script>
-      "use strict";
-      
-      !function() {
-        var t = window.driftt = window.drift = window.driftt || [];
-        if (!t.init) {
-          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-          t.factory = function(e) {
-            return function() {
-              var n = Array.prototype.slice.call(arguments);
-              return n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function(e) {
-            t[e] = t.factory(e);
-          }), t.load = function(t) {
-            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(o, i);
-          };
-        }
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('3z7pxd6nczxa');
-    </script>
-    <!-- End of Async Drift Code -->
-      
+    <title>Mi web site</title>
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
-<body>  
-  
-    <div class="containter-fluid">
-      <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title" id="exampleModalLongTitle">Bienvenido</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Hola soy Gabriel Jesus Valera Castillo y bienvenido a mi sitio Web
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-        <script type="text/javascript">
-          $("#miModal").modal("show");
-        </script>
-      </div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- logo -->
-            <a class="navbar-brand" href="#">
-              <img src="./galeria/appdrawer_7 (2).png" width="50" height="50" alt="">
-            </a>
-            
-            <!-- enlaces -->
-            <div class="collapse navbar-collapse" id="opciones">   
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./html/conocimientos.html">Conocimientos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mis Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                </li>          
-              </ul>
-            </div>
-          </nav>
-          <div class="columna-contenedora ">
-            <div id="carousel1" class="carousel slide contenedor-carusel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel1" data-slide-to="1"></li>
-                  <li data-target="#carousel1" data-slide-to="2"></li>
-                  <li data-target="#carousel1" data-slide-to="3"></li>
-                  <li data-target="#carousel1" data-slide-to="4"></li>
-                  <li data-target="#carousel1" data-slide-to="5"></li>
-                </ol>
-                <!-- diapositivas -->
-                <div class="carousel-inner contenedor-imagenes-carusel">
-                  <div class="contenedor-imagen carousel-item active">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/post-banner-javascript.png" alt="muy pronto">
-                      <!--
-                        <div class="carousel-caption">
-                        <h3>título 1</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                      -->
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/react-one.jpg" alt="">
-                      <!--
-                        <div class="carousel-caption">
-                        <h3>título 2</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                      -->
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/6017da3ed8f203fe979b16dae1ad2259.png" alt="">
-                     <!-- 
-                        <div class="carousel-caption">
-                        <h3>título 4</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                     -->
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/0717_WhythehellwouldIuseNodeJS_Razvan_Social-a216a55a1f0372fa70f397fd38e9297d.png" alt="">
-                     <!-- 
-                        <div class="carousel-caption">
-                        <h3>título 4</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                     -->
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/050209d3-04f8-4606-b140-e50b376fbcae-2.png" alt="">
-                      <!--
-                        <div class="carousel-caption">
-                        <h3>título 3</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                       -->
-                  </div>
-                  <div class="contenedor-imagen carousel-item">
-                    <img class="imagen d-block" src="./galeria/imagenes-carusel/1294277.jpg" alt="">
-                     <!-- 
-                        <div class="carousel-caption">
-                        <h3>título 4</h3>
-                        <p>Descripción de la imagen.</p>
-                      </div>
-                     -->
-                  </div>
-                </div>
-                <!-- botones de desplazamiento a izquierda y derecha -->      
-                <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel1" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="row fila">
-          <div class="columna-presentacion col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 text-justify">
-            <h2>Hola</h2>
-            <p>
-              Hola mucho gusto, mi nombre es Gabriel Jesus, vivo en Venezuela en el estado Portuguesa,
-              actualmente estoy cursando el tercer año de la universidad,
-              en el cual ya tengo el título de técnico superior en informática o como se le conoce por su siglas TSU en informática.
-              El aria de la informática a la cual me dedico es la de la programación, si me preguntaran ¿qué te gusta más,
-              el desarrollo FrontEnd o BackEnd?, respondería que las dos, porque me gusta las dos arias por lo tanto soy un desarrollador FullStack,
-              mi lenguaje favorito por excelencia es JavaScript aunque también me gusta Python pero me encanta todo los que puedes hacer con el eco sistema de JavaScript,
-              bueno si quieres saber más sobre mis Skills puedes ir dándole click <a href="./html/conocimientos.html">aqui</a> para saber más sobre todos los lenguajes o framework que uso
-              o si quieres contactarme para trabajar en un proyecto en el cual tengas en mente as click <a href="./html/contacto.html">aqui</a> para que puedas contactarme.
-            </p>
-          </div>
-        </div>
-          
+<body>
+
+
+    <!-- <div class="contenedor"></div> -->
+    <!-- ocultar-vista -->
+    <div class="section-loaded">
+
     </div>
-    
-    
-    <script type="text/javascript" src="./js/librerias/popper.min.js"></script>
-    
+    <nav class="vista section-menu ocultar-section-menu" id="menu">
+        <div class="contenedor center-margin">
+            <header class="encabezado justify-content-end">
+                <svg onclick="mostrarMenu()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </header>
+            <section class="contenedor-contenido-vista">
+                <div class="contenedor-menu">
+                    <div class="container-fluid mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <span class="titulo">Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center justify-content-sm-between">
+                            <div class="col-12 col-sm-5">
+                                <ul class="menu">
+                                    <li><a href="#" class=" text-center text-sm-start">Resume sobre mi</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Conocimientos</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Proyectos</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Detalles sobre mi</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Redes</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Contactame</a></li>
+                                    <li><a href="#" class=" text-center text-sm-start">Regresar</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto d-none d-sm-flex">
+                                <span class="barra-verical"></span>
+                            </div>
+                            <div class="col-5 d-none d-sm-flex">
+                                <figure class="figure-menu">
+                                    <div class="contenedor-imagen-menu mb-4">
+                                        <img class="imagen-menu" src="./images/menu/1.jpg" alt="imagen xd">
+                                    </div>
+                                    <figcaption>Texto de ejemplo dando una breve explicación de lo que vera en la vista XD</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </nav>
+    <main class="vista vista-inicio " id="inicio">
+        <div class="contenedor center-margin">
+            <header class="encabezado justify-content-between">
+                <a href="https://github.com/gabrielj2814">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-svg bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </header>
+            <section class="contenedor-contenido-vista">
+                <div class="contenido-inicio">
+                    <div class=" container-fluid">
+                        <div class="row justify-content-between justify-content-sm-center">
+                            <div class="col-12 col-sm-6 mb-5">
+                                <div class="avatar-vista-inicio">
+                                    <img class="imagen-avatar-inicio" src="./images/fotos/avatar-test.jpg" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center text-sm-start mb-5">
+                                <h1>
+                                    Bienvenido a mi sito web espero que la pases chevere.
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="col-auto">
+                                <button class="btn btn-primary btn-negro-oscuro btn-lg" data-ir-vista="inicio" onclick="mostrarMenu()">Entrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./bootstrap5/js/bootstrap.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/general.js" type="text/javascript"></script>
 </body>
 </html>
