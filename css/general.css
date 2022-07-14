@@ -30,6 +30,16 @@ body{
     font-family: 'roboto-regular';
 }
 
+.height-auto{
+    height: auto !important;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .conenedor-loaded{
     width: 100%;
     height: 100vh;
@@ -86,6 +96,11 @@ body{
 
 .contenedor{
     max-width: 1024px;
+    min-height: 100vh;
+}
+
+.contenedor-2{
+    max-width: 1024px;
     height: 100vh;
 }
 
@@ -103,6 +118,15 @@ body{
     align-items: center;
     /* justify-content: space-between; */
     padding: 10px;
+}
+
+.boton-menu svg{
+    width: 33px;
+    height: 26px;
+}
+
+.encabezado svg:hover {
+    color: #2D2D2D;
 }
 
 .center-margin{
@@ -200,6 +224,7 @@ body{
 /* color btn */
 
 .btn-negro-oscuro{
+    color: var(--color-fuente-principal);
     background-color: var(--color-secundario) !important;
     border: 0;
 }
