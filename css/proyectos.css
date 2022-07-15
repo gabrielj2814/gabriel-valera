@@ -1,0 +1,17 @@
+.vista-poroyecto{
+    background-color: var(--color-principal);
+}
+
+.contenido-vista{
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    color:var(--color-principal)
+}
