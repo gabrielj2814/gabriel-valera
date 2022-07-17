@@ -1,17 +1,13 @@
-.vista-proyecto{
+.vista-contacto{
     background-color: var(--color-principal);
 }
 
 .contenido-vista{
-    max-width: 1024px;
+    /* max-width: 1024px; */
     width: 100%;
-    height: auto;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.card{
-    color:var(--color-principal)
 }
