@@ -9,6 +9,7 @@
 }
 
 *{
+    color: var(--color-fuente-principal);
     box-sizing: border-box;
     /* border: 1px solid aqua; */
 }

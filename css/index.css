@@ -6,7 +6,6 @@
 .contenedor-contenido{
     background-color: var(--color-fono-contenido-1);
     min-height: 100vh;
-    height: 300vh;
 }
 
 .contendor-menu-mobile{
@@ -77,6 +76,45 @@
     height: 25px;
 }
 
+.seccion-inicio{
+    background-image: url(../images/wallpapper/wallpaper_2.webp);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.seccion-inicio::after{
+	content:'';
+    z-index: -1;
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.seccion-inicio{
+    height: 100vh;
+}
+
+.boton-contratame{
+    margin-bottom:50px;
+}
+
+.inicio-icon-arrow-circle{
+    width: 50px;
+    height: 50px;
+    /* margin-bottom: 15px; */
+}
+
+.seccion-footer{
+    background: red;
+    width: 100%;
+    min-height:100px;
+}
+
 @media screen and (max-width: 991px) {
     .menu{
         height: 10vh;
@@ -90,5 +128,17 @@
     }
     .contendor-menu-mobile{
         display: block;
+    }
+
+    .seccion-inicio{
+        height: 90vh;
+    }
+
+    .seccion-inicio{
+        background-image: url(../images/wallpapper/wallpaper_2.webp);
+        background-size:150% 150%;
+        background-repeat:no-repeat;
+        position: relative;
+        z-index: 1;
     }
 }
