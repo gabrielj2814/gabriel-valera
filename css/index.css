@@ -4,7 +4,7 @@
     position: fixed;
 }
 .contenedor-contenido{
-    background-color: var(--color-fono-contenido-1);
+    background-color: var(--color-fondo-contenido-1);
     min-height: 100vh;
 }
 
@@ -25,7 +25,7 @@
     height: 160px;
     border-radius: 50%;
     overflow: hidden;
-    border: 8px solid var(--color-fono-contenido-1);
+    border: 8px solid var(--color-fondo-contenido-1);
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,45 +73,6 @@
 .icon-menu-footer-rede{
     width: 25px;
     height: 25px;
-}
-
-.seccion-inicio{
-    min-height: 100vh;
-    background-image: url(../images/wallpapper/wallpaper_2.webp);
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
-.seccion-inicio::after{
-	content:'';
-    z-index: -1;
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
-}
-
-
-
-.boton-contratame{
-    margin-bottom:50px;
-}
-
-.contenedor-inicio-icon-arrow-circle{
-    animation: AnimacionContenedorIconArrowCircle;
-    animation-iteration-count:infinite;
-    animation-direction: alternate;
-    animation-duration: 1s;
-}
-
-.inicio-icon-arrow-circle{
-    width: 50px;
-    height: 50px;
-    /* margin-bottom: 15px; */
 }
 
 .contendor-items-menu-movil{
@@ -163,6 +124,74 @@
     height: 40px;
 }
 
+.seccion-inicio{
+    min-height: 100vh;
+    background-image: url(../images/wallpapper/wallpaper_2.webp);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.seccion-inicio::after{
+	content:'';
+    z-index: -1;
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.boton-contratame{
+    margin-bottom:50px;
+}
+
+.contenedor-inicio-icon-arrow-circle{
+    animation: AnimacionContenedorIconArrowCircle;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+.inicio-icon-arrow-circle{
+    width: 50px;
+    height: 50px;
+    /* margin-bottom: 15px; */
+}
+
+.seccion-sobre-mi{
+    padding: 80px 50px 50px 50px;
+    background-color: var(--color-fondo-2);
+}
+
+.titulo-seccion-sobre-mi{
+    margin-bottom: 80px;
+}
+
+.propiedad-sobre-mi{
+    font-family: roboto-bold;
+}
+
+.nombre-seccion-sobre-mi{
+    color: var(--color-fuente-2);
+}
+
+.link-correo-sobre-mi{
+    text-decoration: none;
+    color: var(--color-fuente-2);
+    transition: color .1s ease-out;
+}
+
+.link-correo-sobre-mi:hover{
+    color: var(--color-fuente-2-hover);
+}
+
+.barrita-horizontal-datos-sobre-mi{
+    height: 10px;
+}
+
 .seccion-footer{
     background: var(--color-fonfo-footer);
     width: 100%;
@@ -193,7 +222,6 @@
     }
 }
 
-/* animation */
 /* animate */
 @keyframes AnimacionContenedorIconArrowCircle {
     from{

@@ -2,12 +2,14 @@
     /* colores */
     --color-menu:rgb(17, 20, 24);
     /* --color-menu-2:rgb(17, 20, 24); */
-    --color-fono-contenido-1:rgb(52, 58, 64);
+    --color-fondo-contenido-1:rgb(52, 58, 64);
+    --color-fondo-2:#212529;
     --color-principal:#1A1A1A;
     --color-secundario:#2D2D2D;
     --color-fuente-principal:#FFFFFF;
+    --color-fuente-2:#d4b052;
+    --color-fuente-2-hover:#806931;
     --color-fonfo-footer: #212529;
-    --h1: 3rem;
 }
 
 *{
@@ -36,6 +38,11 @@ html,body{
 @font-face {
     font-family: 'roboto-regular';
     src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
 }
 
 
