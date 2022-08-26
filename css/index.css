@@ -166,7 +166,8 @@
     background-color: var(--color-fondo-2);
 }
 
-.titulo-seccion-sobre-mi{
+.titulo-seccion-sobre-mi,
+.titulo-seccion-que-hago{
     margin-bottom: 80px;
 }
 
@@ -190,6 +191,22 @@
 
 .barrita-horizontal-datos-sobre-mi{
     height: 10px;
+}
+
+.seccion-que-hago{
+    padding: 80px 50px 50px 50px;
+}
+
+.carta-que-hago-contenedor-contenido{
+    display: inline-block;
+    max-width: 400px;
+    margin-left: 10px;
+}
+
+.carta-que-hago-contenedor-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
 }
 
 .seccion-footer{
