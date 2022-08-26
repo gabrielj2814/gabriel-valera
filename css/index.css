@@ -171,6 +171,11 @@
     margin-bottom: 80px;
 }
 
+.sub-titulo-seccion{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
 .propiedad-sobre-mi{
     font-family: roboto-bold;
 }
@@ -242,10 +247,48 @@
     color: var(--color-fuente-3);
 }
 
+.lista-resume-skills{
+    list-style: none;
+}
+
+.seccion-contacto{
+    padding: 80px 20px 50px 20px;
+    background-color: var(--color-fondo-2);
+}
+
+.input-form-contacto{
+    background-color: var(--color-menu);
+    border-color: var(--color-menu);
+    color: var(--color-fuente-2);
+}
+
+.input-form-contacto:focus{
+    background-color: var(--color-menu);
+    color: var(--color-fuente-2);
+}
+
+.input-comentario{
+    height: 200px !important;
+}
+
+.form-floating label{
+    /* color: #232a31; */
+    color: var(--color-fuente-2);
+}
+
+.contendor-numero{
+    color: var(--color-fuente-2);
+}
+
+.icon-seccion-direccion{
+    margin-right: 5px;
+}
+
 .seccion-footer{
-    background: var(--color-fonfo-footer);
+    /* background: var(--color-fonfo-footer); */
+    background-color: var(--color-fondo-contenido);
     width: 100%;
-    min-height:100px;
+    min-height:150px;
 }
 /* medias */
 @media screen and (max-width: 991px) {
