@@ -194,11 +194,10 @@
 }
 
 .seccion-que-hago{
-    padding: 80px 50px 50px 50px;
+    padding: 80px 20px 30px 20px;
 }
 
 .carta-que-hago-contenedor-contenido{
-    display: inline-block;
     max-width: 400px;
     margin-left: 10px;
 }
@@ -207,6 +206,14 @@
     width: 70px;
     height: 70px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-que-hago-contenedor-icon svg{
+    stroke: var(--color-fuente-2);
 }
 
 .seccion-footer{
