@@ -1,3 +1,4 @@
+
 let iconMenuMovil=document.getElementById("iconMenuMovil")
 
 function isMobile(){
@@ -22,8 +23,6 @@ function mostrarMenu(){
     let $contendorItemsMenuMovil=document.querySelector(".contendor-items-menu-movil")
     $contendorItemsMenuMovil.classList.toggle("mostrar-contendor-items-menu-movil")
 }
-
-
 
 iconMenuMovil.addEventListener("click",mostrarMenu) 
 
