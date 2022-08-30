@@ -162,7 +162,7 @@
 }
 
 .seccion-sobre-mi{
-    padding: 80px 50px 50px 50px;
+    padding: 90px 50px 50px 50px;
     background-color: var(--color-fondo-2);
 }
 
@@ -199,7 +199,7 @@
 }
 
 .seccion-que-hago{
-    padding: 80px 20px 30px 20px;
+    padding: 90px 20px 30px 20px;
 }
 
 .carta-que-hago-contenedor-contenido{
@@ -222,7 +222,7 @@
 }
 
 .seccion-resume{
-    padding: 80px 20px 50px 20px;
+    padding: 90px 20px 50px 20px;
     background-color: var(--color-fondo-2);
 }
 
@@ -252,7 +252,7 @@
 }
 
 .seccion-contacto{
-    padding: 80px 20px 50px 20px;
+    padding: 90px 20px 50px 20px;
     background-color: var(--color-fondo-2);
 }
 
@@ -285,7 +285,7 @@
 }
 
 .seccion-porfolio{
-    padding: 80px 20px 50px 20px;
+    padding: 90px 20px 50px 20px;
 }
 
 .titulo-carta-proyecto{

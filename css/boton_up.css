@@ -1,0 +1,27 @@
+.boton-up{
+    position: fixed;
+    z-index: 90;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-menu);
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+
+.ocultar-boton-up{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.boton-up svg {
+    width: 60px;
+    height: 60px;
+    transition: fill .2s ease-out;
+}
+
+.boton-up svg:hover{
+    fill: var(--color-fuente-2);
+}

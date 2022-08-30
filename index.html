@@ -9,10 +9,17 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/puntero.css">
+    <link rel="stylesheet" href="./css/boton_up.css">
 </head>
 <body>
     <main class="container-fluid">
         <div id="puntero"></div>
+        <div id="botonUp" class="boton-up ocultar-boton-up" onclick="irAlTopeDelaPagina()">
+            <svg onclick="irAlTopeDelaPagina()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+        </div>
+        
         <div class=" row">
             <nav class=" menu col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 p-0">
                 <div class=" contendor-menu-movil px-3 m-0 row justify-content-between align-items-center align-baseline">
@@ -25,27 +32,27 @@
                     <div class="contendor-items-menu-movil">
                         <ul>
                             <li>
-                                <a href="#seccion-inicio">Inicio</a>
+                                <a onclick="mostrarMenu()" href="#seccion-inicio">Inicio</a>
                                 <hr class="m-0"/>
                             </li>
                             <li>
-                                <a href="#seccion-sobre-mi">Sobre mi</a>
+                                <a onclick="mostrarMenu()" href="#seccion-sobre-mi">Sobre mi</a>
                                 <hr class="m-0"/>
                             </li>
                             <li>
-                                <a href="#seccion-que-hago">Que Hago</a>
+                                <a onclick="mostrarMenu()" href="#seccion-que-hago">Que Hago</a>
                                 <hr class="m-0"/>
                             </li>
                             <li>
-                                <a href="#seccion-resume">Resume</a>
+                                <a onclick="mostrarMenu()" href="#seccion-resume">Resume</a>
                                 <hr class="m-0"/>
                             </li>
                             <li>
-                                <a href="#seccion-porfolio">Porfolio</a>
+                                <a onclick="mostrarMenu()" href="#seccion-porfolio">Porfolio</a>
                                 <hr class="m-0"/>
                             </li>
                             <li>
-                                <a href="#seccion-contacto">Contacto</a>
+                                <a onclick="mostrarMenu()" href="#seccion-contacto">Contacto</a>
                                 <hr class="m-0"/>
                             </li>
                         </ul>

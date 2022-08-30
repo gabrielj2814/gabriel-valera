@@ -1,5 +1,12 @@
 
 let iconMenuMovil=document.getElementById("iconMenuMovil")
+let $botonUp=document.getElementById("botonUp")
+
+let trackingScroll= false
+
+let posicionesScrollY ={
+    mostrarBotonIrArriba: 684
+}
 
 function isMobile(){
     if((navigator.userAgent.match(/Android/i)) ||
@@ -24,6 +31,48 @@ function mostrarMenu(){
     $contendorItemsMenuMovil.classList.toggle("mostrar-contendor-items-menu-movil")
 }
 
+function irAlTopeDelaPagina(){
+    // console.log("ir al tope de la pagina")
+    window.scroll({top: 0,behavior: 'smooth'});
+}
+
+function ejecutarEventosSegunLaPosicionDelScroll(scroll_posicion){
+    // console.log("evento scroll ",scroll_posicion) .boton-up
+    if(scroll_posicion>=posicionesScrollY.mostrarBotonIrArriba){
+        console.log("mostrar boton ir arriba")
+        let $botonUp=document.querySelector(".boton-up")
+        if($botonUp.classList.contains("ocultar-boton-up")){
+            $botonUp.classList.remove("ocultar-boton-up")
+        }
+    }
+    else{
+        let $botonUp=document.querySelector(".boton-up")
+        if(!$botonUp.classList.contains("ocultar-boton-up")){
+            $botonUp.classList.add("ocultar-boton-up")
+        }
+    }
+}
+
+function trackingScrollY(e){
+    /*
+    * este metodo lo que hace es trackiar el scrollY del navegador y 
+    * dependiendo en donde se encuentre el usuario scroleadon hara algo
+    */
+    
+    let posicion = window.scrollY;
+    // console.log("scroll y => ")
+    if(!trackingScroll){
+        // * 
+        window.requestAnimationFrame(function () {
+            ejecutarEventosSegunLaPosicionDelScroll(posicion)
+            trackingScroll= false
+        })
+    }
+    trackingScroll=true
+}
+
+// --------------
+
 iconMenuMovil.addEventListener("click",mostrarMenu) 
 
 document.addEventListener("mousemove", e => {
@@ -33,5 +82,9 @@ document.addEventListener("mousemove", e => {
     let $puntero=document.getElementById("puntero")
     $puntero.style=`transform: translate3d(${mouseX}px, ${mouseY}px, 0)`
 })
+
+// $botonUp.addEventListener("click",irAlTopeDelaPagina)
+
+document.addEventListener("scroll",trackingScrollY)
 
 isMobile()
