@@ -330,7 +330,15 @@
     /* background: var(--color-fonfo-footer); */
     background-color: var(--color-fondo-contenido);
     width: 100%;
+
+}
+
+.contenedor-footer{
     min-height:150px;
+}
+
+.contenedor-footer ul {
+    list-style: none;
 }
 /* medias */
 @media screen and (max-width: 991px) {

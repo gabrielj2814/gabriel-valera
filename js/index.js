@@ -58,9 +58,7 @@ function trackingScrollY(e){
     * este metodo lo que hace es trackiar el scrollY del navegador y 
     * dependiendo en donde se encuentre el usuario scroleadon hara algo
     */
-    
     let posicion = window.scrollY;
-    // console.log("scroll y => ")
     if(!trackingScroll){
         // * 
         window.requestAnimationFrame(function () {
@@ -71,9 +69,16 @@ function trackingScrollY(e){
     trackingScroll=true
 }
 
-// --------------
+function quitarLoaderPage(){
+    // let $contenedorLoader=document.getElementById("contenedorLoader")
+    // $contenedorLoader.classList.add("ocultar-contenedor-loader")
+    setTimeout(() => {
+        let $contenedorLoader=document.getElementById("contenedorLoader")
+        $contenedorLoader.classList.add("ocultar-contenedor-loader")
+    },5000)
+}
 
-iconMenuMovil.addEventListener("click",mostrarMenu) 
+// --------------
 
 document.addEventListener("mousemove", e => {
     let mouseX, mouseY = 0
@@ -83,8 +88,11 @@ document.addEventListener("mousemove", e => {
     $puntero.style=`transform: translate3d(${mouseX}px, ${mouseY}px, 0)`
 })
 
-// $botonUp.addEventListener("click",irAlTopeDelaPagina)
+// -------- agregar enventos
+document.addEventListener("DOMContentLoaded",quitarLoaderPage)
 
 document.addEventListener("scroll",trackingScrollY)
+
+iconMenuMovil.addEventListener("click",mostrarMenu) 
 
 isMobile()
