@@ -70,12 +70,12 @@ function trackingScrollY(e){
 }
 
 function quitarLoaderPage(){
-    // let $contenedorLoader=document.getElementById("contenedorLoader")
-    // $contenedorLoader.classList.add("ocultar-contenedor-loader")
-    setTimeout(() => {
-        let $contenedorLoader=document.getElementById("contenedorLoader")
-        $contenedorLoader.classList.add("ocultar-contenedor-loader")
-    },5000)
+    let $contenedorLoader=document.getElementById("contenedorLoader")
+    $contenedorLoader.classList.add("ocultar-contenedor-loader")
+    // setTimeout(() => {
+    //     let $contenedorLoader=document.getElementById("contenedorLoader")
+    //     $contenedorLoader.classList.add("ocultar-contenedor-loader")
+    // },5000)
 }
 
 // --------------
