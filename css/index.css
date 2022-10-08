@@ -254,6 +254,29 @@
 
 .lista-resume-skills{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lista-resume-skills li {
+    margin-right: 40px;
+}
+
+.icon-skill{
+    width: 80px;
+    height: 80px;
+    /* fill: #fff; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombre-skill{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .seccion-contacto{
