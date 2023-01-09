@@ -365,6 +365,10 @@
 .contenedor-footer ul {
     list-style: none;
 }
+
+.lista-tecnologias-backend{
+    gap: 10px;
+}
 /* medias */
 @media screen and (max-width: 991px) {
     .menu{
